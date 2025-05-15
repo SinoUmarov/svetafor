@@ -1,0 +1,48 @@
+.traffic-light {
+  width: 100px;
+  background: #333;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #444;
+  opacity: 0.4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  transition: opacity 0.3s;
+}
+
+.light.on {
+  opacity: 1;
+}
+
+.red.on {
+  background: red;
+}
+
+.yellow.on {
+  background: yellow;
+  color: black;
+}
+
+.green.on {
+  background: green;
+}
+
+.timer {
+  position: absolute;
+}
